@@ -14,3 +14,11 @@
 **Key insight:** Matrix columns show where basis vectors [1,0] and [0,1] land after transformation. Matrix × vector = transformed vector.
 **Code:** linalg/matrix.py (uses vector.py)
 **Spiral connections:** Used Vector.dot() for all multiplication operations
+
+
+## Day 3 - Determinants
+**Date:** January 1, 2026
+**Concepts:** Determinant as area/volume scaling factor, zero determinant means dimension collapse, cofactor expansion for n×n matrices
+**Key insight:** det = 0 means transformation is irreversible (can't invert)
+**Code:** Added minor(), cofactor(), determinant() to matrix.py
+**Spiral connections:** Used Matrix class from Day 2, recursive structure builds on matrix operations
