@@ -31,8 +31,8 @@ class Vector:
 
 
 if __name__ == "__main__":
-    v1 = Vector([3, 4]) 
-    v2 = Vector([5, 6])
+    v1 = Vector([5, 0]) 
+    v2 = Vector([4, 1])
     print("dot:", v1.dot(v2))
     print("magnitude:", v1.magnitude())
     print("add:", v1.add(v2))
