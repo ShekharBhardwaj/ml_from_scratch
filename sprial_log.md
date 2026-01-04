@@ -50,3 +50,13 @@
 **ML connection:** Same pattern used in linear regression's normal equation
 **Code:** linalg/solver.py
 **Spiral connections:** Used Vector (Day 1), Matrix (Day 2), determinant (Day 3), inverse (Day 4)
+
+
+
+## Day 7 - Geometric Transformations
+**Date:** January 2, 2026
+**Concepts:** Rotation matrices (sin/cos), scaling matrices, shear matrices, matrix composition
+**Key insight:** Combining transformations = multiplying matrices. Order matters.
+**ML connection:** Image augmentation (rotating/scaling training images), feature transformations
+**Code:** linalg/transform.py
+**Spiral connections:** Used Vector (Day 1), Matrix (Day 2), multiply_vector (Day 2), multiply_matrix (Day 2)
