@@ -40,3 +40,13 @@
 **ML connection:** PCA finds directions of maximum variance (eigenvectors of covariance matrix), PageRank, neural network stability
 **Code:** Added eigenvalues() to matrix.py
 **Spiral connections:** Uses determinant (Day 3), derived from A - λI concept
+
+
+
+## Day 6 - Linear Equation Solver
+**Date:** January 2, 2026
+**Concepts:** Systems of linear equations as Ax = b, solving via inverse
+**Key insight:** Matrix inverse lets you "undo" the transformation to find the original input
+**ML connection:** Same pattern used in linear regression's normal equation
+**Code:** linalg/solver.py
+**Spiral connections:** Used Vector (Day 1), Matrix (Day 2), determinant (Day 3), inverse (Day 4)

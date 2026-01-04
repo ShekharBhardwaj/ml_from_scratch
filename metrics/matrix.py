@@ -1,4 +1,4 @@
-from vector import Vector
+from linalg.vector import Vector
 import math
 class Matrix:
     def __init__(self, rows):
