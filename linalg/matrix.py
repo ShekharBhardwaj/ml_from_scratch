@@ -1,5 +1,5 @@
 from vector import Vector
-
+import math
 class Matrix:
     def __init__(self, rows):
        self.rows = rows
@@ -42,12 +42,23 @@ class Matrix:
             return self.rows[0][0] * self.rows[1][1] - self.rows[0][1] * self.rows[1][0]
         return sum(self.rows[0][i] * self.cofactor(0, i) for i in range(self.shape()[1]))
 
+    def inverse(self):
+        """Return the inverse matrix (2x2 for now)"""
+        det = self.determinant()
+        if det == 0:
+            raise ValueError("Matrix is not invertible")
+        return Matrix([[self.rows[1][1] / det, -self.rows[0][1] / det], 
+                    [-self.rows[1][0] / det, self.rows[0][0] / det]])
+
+    
+    def eigenvalues(self):
+        """Return eigenvalues for 2x2 matrix"""
+        a, b, c, d = self.rows[0][0], self.rows[0][1], self.rows[1][0], self.rows[1][1]
+        trace = a + d
+        det = a * d - b * c
+        return [(trace + math.sqrt(trace**2 - 4*det)) / 2, (trace - math.sqrt(trace**2 - 4*det)) / 2]
+    
 
 if __name__ == "__main__":
-    print("Testing Matrix class...")
-    m3 = Matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-
-    print("det 3x3:", m3.determinant())  # Should be 0
-
-    m4 = Matrix([[2, 1, 3], [1, 0, 2], [0, 1, 1]])
-    print("det 3x3:", m4.determinant())  # Should be -1
+    m = Matrix([[4, 2], [1, 3]])
+    print("eigenvalues:", m.eigenvalues())
