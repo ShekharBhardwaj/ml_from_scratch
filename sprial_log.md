@@ -60,3 +60,12 @@
 **ML connection:** Image augmentation (rotating/scaling training images), feature transformations
 **Code:** linalg/transform.py
 **Spiral connections:** Used Vector (Day 1), Matrix (Day 2), multiply_vector (Day 2), multiply_matrix (Day 2)
+
+
+## Day 8 - Derivatives
+**Date:** January 2, 2026
+**Concepts:** Derivative as rate of change, partial derivatives, gradient as vector of partial derivatives
+**Key insight:** Gradient points toward steepest increase. To minimize, go in the negative gradient direction.
+**ML connection:** Gradient descent uses the gradient to find the minimum of the loss function
+**Code:** calculus/derivative.py (derivative, gradient)
+**Spiral connections:** Gradient is a vector (Day 1) — has direction and magnitude
