@@ -69,3 +69,12 @@
 **ML connection:** Gradient descent uses the gradient to find the minimum of the loss function
 **Code:** calculus/derivative.py (derivative, gradient)
 **Spiral connections:** Gradient is a vector (Day 1) — has direction and magnitude
+
+
+## Day 9 - Gradient Descent
+**Date:** January 2, 2026
+**Concepts:** Gradient descent algorithm, learning rate, iterative optimization
+**Key insight:** To minimize a function, repeatedly step in the negative gradient direction
+**ML connection:** This exact algorithm adjusts weights during model training to minimize loss
+**Code:** calculus/gradient_descent.py
+**Spiral connections:** Uses gradient (Day 8), which uses derivatives (Day 8), gradient is a vector (Day 1)
