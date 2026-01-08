@@ -78,3 +78,12 @@
 **ML connection:** This exact algorithm adjusts weights during model training to minimize loss
 **Code:** calculus/gradient_descent.py
 **Spiral connections:** Uses gradient (Day 8), which uses derivatives (Day 8), gradient is a vector (Day 1)
+
+
+## Day 10 - Linear Regression
+**Date:** January 2, 2026
+**Concepts:** Linear regression (y = weight*x + bias), Mean Squared Error loss, training a model
+**Key insight:** ML training = use gradient descent to find weight and bias that minimize loss
+**ML connection:** This IS the ML model — predicting a number from input
+**Code:** models/linear_regression.py
+**Spiral connections:** Uses gradient descent (Day 9), gradient (Day 8), derivatives (Day 8)
