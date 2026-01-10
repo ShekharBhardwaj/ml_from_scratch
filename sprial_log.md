@@ -87,3 +87,12 @@
 **ML connection:** This IS the ML model — predicting a number from input
 **Code:** models/linear_regression.py
 **Spiral connections:** Uses gradient descent (Day 9), gradient (Day 8), derivatives (Day 8)
+
+
+## Day 12 - Evaluation Metrics
+**Date:** January 2, 2026
+**Concepts:** Accuracy, precision, recall, F1 score, confusion matrix (TP, FP, TN, FN)
+**Key insight:** Accuracy alone isn't enough. Precision = "when I predict yes, am I right?" Recall = "did I find all the yes cases?"
+**ML connection:** Choose metric based on problem—spam filter needs precision, disease detection needs recall
+**Code:** metrics/classification.py
+**Spiral connections:** Evaluates logistic regression (Day 11), applies to any classification model
