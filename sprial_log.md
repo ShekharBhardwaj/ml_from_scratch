@@ -88,6 +88,13 @@
 **Code:** models/linear_regression.py
 **Spiral connections:** Uses gradient descent (Day 9), gradient (Day 8), derivatives (Day 8)
 
+## Day 11 - Logistic Regression
+**Date:** January 2, 2026
+**Concepts:** Classification (predict category), sigmoid function (squash to 0-1), logistic regression
+**Key insight:** Logistic regression = linear regression + sigmoid. Everything else (loss, gradient, training) stays the same.
+**Code:** models/logistic_regression.py
+**Spiral connections:** Uses gradient descent (Day 9), loss function (Day 10), same training loop as linear regression (Day 10)
+
 
 ## Day 12 - Evaluation Metrics
 **Date:** January 2, 2026
@@ -96,3 +103,11 @@
 **ML connection:** Choose metric based on problem—spam filter needs precision, disease detection needs recall
 **Code:** metrics/classification.py
 **Spiral connections:** Evaluates logistic regression (Day 11), applies to any classification model
+
+
+## Day 13 - Train/Test Split
+**Date:** January 2, 2026
+**Concepts:** Training set, test set, generalization, overfitting
+**Key insight:** Always evaluate on data the model hasn't seen. Training accuracy can lie, test accuracy tells the truth.
+**Code:** utils/split.py, updated logistic_regression.py
+**Spiral connections:** Uses logistic regression (Day 11), accuracy metric (Day 12)
