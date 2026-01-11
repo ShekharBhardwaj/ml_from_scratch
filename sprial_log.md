@@ -9,7 +9,7 @@
 
 
 ## Day 2 - Matrices
-**Date:** January 2, 2026
+**Date:** January 1, 2026
 **Concepts:** Matrix as transformation, shape, columns as transformed basis vectors, matrix-vector multiplication, matrix-matrix multiplication, identity matrix
 **Key insight:** Matrix columns show where basis vectors [1,0] and [0,1] land after transformation. Matrix × vector = transformed vector.
 **Code:** linalg/matrix.py (uses vector.py)
@@ -34,7 +34,7 @@
 
 
 ## Day 5 - Eigenvalues
-**Date:** January 1, 2026
+**Date:** January 2, 2026
 **Concepts:** Eigenvectors (direction unchanged by transformation), eigenvalues (scaling factor), trace, characteristic equation
 **Key insight:** Eigenvectors are special directions that only get scaled, not rotated. Eigenvalues tell you the scaling factor.
 **ML connection:** PCA finds directions of maximum variance (eigenvectors of covariance matrix), PageRank, neural network stability
@@ -54,7 +54,7 @@
 
 
 ## Day 7 - Geometric Transformations
-**Date:** January 2, 2026
+**Date:** January 3, 2026
 **Concepts:** Rotation matrices (sin/cos), scaling matrices, shear matrices, matrix composition
 **Key insight:** Combining transformations = multiplying matrices. Order matters.
 **ML connection:** Image augmentation (rotating/scaling training images), feature transformations
@@ -63,7 +63,7 @@
 
 
 ## Day 8 - Derivatives
-**Date:** January 2, 2026
+**Date:** January 4, 2026
 **Concepts:** Derivative as rate of change, partial derivatives, gradient as vector of partial derivatives
 **Key insight:** Gradient points toward steepest increase. To minimize, go in the negative gradient direction.
 **ML connection:** Gradient descent uses the gradient to find the minimum of the loss function
@@ -72,7 +72,7 @@
 
 
 ## Day 9 - Gradient Descent
-**Date:** January 2, 2026
+**Date:** January 5, 2026
 **Concepts:** Gradient descent algorithm, learning rate, iterative optimization
 **Key insight:** To minimize a function, repeatedly step in the negative gradient direction
 **ML connection:** This exact algorithm adjusts weights during model training to minimize loss
@@ -81,7 +81,7 @@
 
 
 ## Day 10 - Linear Regression
-**Date:** January 2, 2026
+**Date:** January 6, 2026
 **Concepts:** Linear regression (y = weight*x + bias), Mean Squared Error loss, training a model
 **Key insight:** ML training = use gradient descent to find weight and bias that minimize loss
 **ML connection:** This IS the ML model — predicting a number from input
@@ -89,7 +89,7 @@
 **Spiral connections:** Uses gradient descent (Day 9), gradient (Day 8), derivatives (Day 8)
 
 ## Day 11 - Logistic Regression
-**Date:** January 2, 2026
+**Date:** January 7, 2026
 **Concepts:** Classification (predict category), sigmoid function (squash to 0-1), logistic regression
 **Key insight:** Logistic regression = linear regression + sigmoid. Everything else (loss, gradient, training) stays the same.
 **Code:** models/logistic_regression.py
@@ -97,7 +97,7 @@
 
 
 ## Day 12 - Evaluation Metrics
-**Date:** January 2, 2026
+**Date:** January 8, 2026
 **Concepts:** Accuracy, precision, recall, F1 score, confusion matrix (TP, FP, TN, FN)
 **Key insight:** Accuracy alone isn't enough. Precision = "when I predict yes, am I right?" Recall = "did I find all the yes cases?"
 **ML connection:** Choose metric based on problem—spam filter needs precision, disease detection needs recall
@@ -106,7 +106,7 @@
 
 
 ## Day 13 - Train/Test Split
-**Date:** January 2, 2026
+**Date:** January 9, 2026
 **Concepts:** Training set, test set, generalization, overfitting
 **Key insight:** Always evaluate on data the model hasn't seen. Training accuracy can lie, test accuracy tells the truth.
 **Code:** utils/split.py, updated logistic_regression.py
@@ -114,7 +114,7 @@
 
 
 ## Day 14 - Feature Scaling
-**Date:** January 2, 2026
+**Date:** January 10, 2026
 **Concepts:** Min-max scaling, feature normalization, why scale matters for gradient descent
 **Key insight:** Features with different ranges make gradient descent unstable. Scale to 0-1 for faster, stable training.
 **Code:** utils/scaling.py
@@ -122,7 +122,7 @@
 
 
 ## Day 15 - Neural Network Concepts
-**Date:** January 3, 2026
+**Date:** January 11, 2026
 **Concepts:** Neural network structure, hidden layers, neurons, ReLU activation, forward pass
 **Key insight:** Neural networks stack simple operations (weight × input + bias + activation) to learn complex non-linear patterns
 **Code:** models/neural_network.py (forward pass only)
