@@ -111,3 +111,19 @@
 **Key insight:** Always evaluate on data the model hasn't seen. Training accuracy can lie, test accuracy tells the truth.
 **Code:** utils/split.py, updated logistic_regression.py
 **Spiral connections:** Uses logistic regression (Day 11), accuracy metric (Day 12)
+
+
+## Day 14 - Feature Scaling
+**Date:** January 2, 2026
+**Concepts:** Min-max scaling, feature normalization, why scale matters for gradient descent
+**Key insight:** Features with different ranges make gradient descent unstable. Scale to 0-1 for faster, stable training.
+**Code:** utils/scaling.py
+**Spiral connections:** Prepares data for gradient descent (Day 9), used before training models (Days 10-11)
+
+
+## Day 15 - Neural Network Concepts
+**Date:** January 3, 2026
+**Concepts:** Neural network structure, hidden layers, neurons, ReLU activation, forward pass
+**Key insight:** Neural networks stack simple operations (weight × input + bias + activation) to learn complex non-linear patterns
+**Code:** models/neural_network.py (forward pass only)
+**Spiral connections:** Uses same building blocks as linear regression (Day 10), ReLU is like sigmoid (Day 11) but simpler
