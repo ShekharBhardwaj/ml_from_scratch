@@ -127,3 +127,81 @@
 **Key insight:** Neural networks stack simple operations (weight × input + bias + activation) to learn complex non-linear patterns
 **Code:** models/neural_network.py (forward pass only)
 **Spiral connections:** Uses same building blocks as linear regression (Day 10), ReLU is like sigmoid (Day 11) but simpler
+
+
+## Day 16 - Backpropagation
+**Date:** January 11, 2026
+**Concepts:** Chain rule, backpropagation, computing gradients for multiple weights
+**Key insight:** Backpropagation = chain rule applied through the network. "When this weight changes, how much does loss change?"
+**Code:** models/neural_network.py (training with numerical gradients)
+**Spiral connections:** Same gradient descent loop (Day 9), same loss function (Day 10), just more weights
+
+
+
+## Day 17 - Training on Multiple Data Points
+**Date:** January 11, 2026
+**Concepts:** Training on datasets, average loss, generalization to unseen data
+**Key insight:** Train on multiple points, test on new points. If it predicts well on unseen data, it learned the pattern.
+**Code:** models/neural_network.py (multi-point training)
+**Spiral connections:** Same training loop (Day 16), average loss like Day 10
+
+
+
+## Day 18 - Neural Network Class
+**Date:** January 11, 2026
+**Concepts:** Organizing neural network into a class, gradient explosion, proper gradient computation
+**Key insight:** Compute ALL gradients before updating ANY weights. Otherwise gradients are wrong and training explodes.
+**Code:** models/neural_net.py (clean NeuralNetwork class)
+**Spiral connections:** Uses same gradient descent (Day 9), same loss function (Day 10), class structure like Vector/Matrix (Day 1-2)
+
+
+
+## Day 19 - Loading MNIST
+**Date:** January 11, 2026
+**Concepts:** MNIST dataset, image as pixel array, image classification task
+**Key insight:** An image is just a list of numbers (784 pixels). Neural network's job: pixels in → digit out.
+**Code:** data/mnist_loader.py
+**Spiral connections:** This is classification like logistic regression (Day 11), but with 784 inputs instead of 1
+
+
+## Day 20 - MNIST Network (Part 1)
+**Date:** January 11, 2026
+**Concepts:** Softmax (outputs to probabilities), cross-entropy loss, numerical gradients for large network
+**Key insight:** Network CAN learn — loss dropped from 2.4 to 0 on one image. But numerical gradients are too slow.
+**Code:** models/mnist_net.py (forward, softmax, loss, gradients, train_one_image)
+**Spiral connections:** Same gradient descent (Day 9), same loss concept (Day 10), scaled up to 50,890 weights
+
+
+
+## Day 21 - Training Limits
+**Date:** January 11, 2026
+**Concepts:** Mini-batch training, accuracy measurement, limits of numerical gradients
+**Key insight:** Numerical gradients are too slow for real networks. Need analytical backpropagation (PyTorch).
+**Code:** models/mnist_net_fast.py (attempted faster training)
+**Spiral connections:** Hit the wall — we understand the concepts, now we need better tools
+
+
+## Day 22 - PyTorch Basics
+**Date:** January 12, 2026
+**Concepts:** Tensors, automatic gradients, nn.Linear, loss functions, optimizers, training loop
+**Key insight:** PyTorch does the same thing we built from scratch, but faster and with less code. backward() replaces our manual gradient calculations.
+**Code:** pytorch/linear_regression.py
+**Spiral connections:** Same concepts as Day 10, now automated
+
+
+## Day 23 - MNIST in PyTorch
+**Date:** January 12, 2026
+**Concepts:** torchvision datasets, DataLoader batching, nn.Module, training loop, testing accuracy
+**Key insight:** Same network as Day 20 (784→64→10), but PyTorch computes gradients automatically. Training that would take days now takes 30 seconds.
+**Code:** pytorch/mnist_pytorch.py
+**Results:** 97.24% accuracy on 10,000 test images
+**Spiral connections:** Same architecture as Day 20, same training loop as Day 22, now at scale
+
+
+## Day 24 - Save/Load and Gradio App
+**Date:** January 12, 2026
+**Concepts:** torch.save(), load_state_dict(), Gradio interface, image preprocessing
+**Key insight:** Trained models can be saved and deployed. A few lines of Gradio code creates a working web app.
+**Code:** pytorch/gradio_app.py
+**Spiral connections:** Uses trained model from Day 23, preprocessing like Day 14 (scaling)
+
