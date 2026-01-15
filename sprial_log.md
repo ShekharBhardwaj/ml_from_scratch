@@ -202,6 +202,15 @@
 **Date:** January 12, 2026
 **Concepts:** torch.save(), load_state_dict(), Gradio interface, image preprocessing
 **Key insight:** Trained models can be saved and deployed. A few lines of Gradio code creates a working web app.
-**Code:** pytorch/gradio_app.py
+**Code:** pytorch/mnist_gradio_app.py
 **Spiral connections:** Uses trained model from Day 23, preprocessing like Day 14 (scaling)
+
+
+## Day 25 - Convolutional Neural Networks (CNN)
+**Date:** January 13, 2026
+**Concepts:** Conv2d (filters), MaxPool2d (shrinking), feature maps, spatial pattern detection
+**Key insight:** CNN keeps 2D structure, detects local patterns (edges, curves), then Linear layers make final decision
+**Code:** pytorch/mnist_cnn.py
+**Results:** 98.97% accuracy (vs 97.87% for plain linear)
+**Spiral connections:** Same training loop as Day 23, adds convolution concepts
 
